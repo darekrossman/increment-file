@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec { raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/drossman/development/modules/increment-file',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/drossman/.npm/increment-file/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/drossman/.npm/increment-file/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/drossman/development/modules/increment-file' ]
+10 verbose tarball /Users/drossman/.npm/increment-file/1.0.0/package.tgz
+11 verbose folder /Users/drossman/development/modules/increment-file
+12 info prepublish increment-file@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/drossman/.npm/increment-file/1.0.0/package.tgz
+14 silly cache afterAdd increment-file@1.0.0
+15 verbose afterAdd /Users/drossman/.npm/increment-file/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/drossman/.npm/increment-file/1.0.0/package/package.json written
+17 silly publish { name: 'increment-file',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'Increment the base filename',
+17 silly publish   main: 'index.js',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/subpopular/increment-file' },
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   author: { name: 'Darek Rossman', email: 'spellingbees@gmail.com' },
+17 silly publish   license: 'ISC',
+17 silly publish   gitHead: '7c20e456c201f2df6d70e27a2882d8c1d84a5f6e',
+17 silly publish   bugs: { url: 'https://github.com/subpopular/increment-file/issues' },
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   homepage: 'https://github.com/subpopular/increment-file',
+17 silly publish   _id: 'increment-file@1.0.0',
+17 silly publish   _shasum: '0967d154f3ae1d2d5eae3acbd808bf72020b1d63',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name increment-file
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/increment-file
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/drossman/.npm/increment-file/1.0.0/package.tgz
+24 verbose request uri https://registry.npmjs.org/increment-file
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 7:37:44 PM
+27 verbose request id 9aadf28112618d69
+28 http request PUT https://registry.npmjs.org/increment-file
+29 http 403 https://registry.npmjs.org/increment-file
+30 verbose headers { date: 'Sun, 15 Feb 2015 00:37:46 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=60',
+30 verbose headers   'content-length': '1930',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'x-served-by': 'cache-iad2128-IAD',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1423960665.877321,VS0,VE348',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 verbose request invalidating /Users/drossman/.npm/registry.npmjs.org/increment-file on PUT
+32 error publish Failed PUT 403
+33 verbose stack Error: forbidden cannot modify pre-existing version: 1.0.0
+33 verbose stack old={"name":"increment-file","version":"1.0.0","description":"Increment the base filename","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Darek Rossman","email":"spellingbees@gmail.com"},"license":"ISC","_id":"increment-file@1.0.0","_shasum":"a64b597eb8c52dffa092d80a10da41daf3a7eea0","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"drossman","email":"spellingbees@gmail.com"},"maintainers":[{"name":"drossman","email":"spellingbees@gmail.com"}],"dist":{"shasum":"a64b597eb8c52dffa092d80a10da41daf3a7eea0","tarball":"http://registry.npmjs.org/increment-file/-/increment-file-1.0.0.tgz"}}
+33 verbose stack new={"name":"increment-file","version":"1.0.0","description":"Increment the base filename","main":"index.js","repository":{"type":"git","url":"https://github.com/subpopular/increment-file"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Darek Rossman","email":"spellingbees@gmail.com"},"license":"ISC","gitHead":"7c20e456c201f2df6d70e27a2882d8c1d84a5f6e","bugs":{"url":"https://github.com/subpopular/increment-file/issues"},"readme":"ERROR: No README data found!","homepage":"https://github.com/subpopular/increment-file","_id":"increment-file@1.0.0","_shasum":"0967d154f3ae1d2d5eae3acbd808bf72020b1d63","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"drossman","email":"spellingbees@gmail.com"},"maintainers":[{"name":"drossman","email":"spellingbees@gmail.com"}],"dist":{"shasum":"0967d154f3ae1d2d5eae3acbd808bf72020b1d63","tarball":"http://registry.npmjs.org/increment-file/-/increment-file-1.0.0.tgz"}}: increment-file
+33 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+33 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+33 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:344:22)
+33 verbose stack     at Request.emit (events.js:110:17)
+33 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1239:14)
+33 verbose stack     at Request.emit (events.js:129:20)
+33 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1187:12)
+33 verbose stack     at IncomingMessage.emit (events.js:129:20)
+33 verbose stack     at _stream_readable.js:908:16
+33 verbose stack     at process._tickCallback (node.js:355:11)
+34 verbose statusCode 403
+35 verbose pkgid increment-file
+36 verbose cwd /Users/drossman/development/modules/increment-file
+37 error Darwin 14.0.0
+38 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "./"
+39 error node v0.12.0
+40 error npm  v2.5.1
+41 error code E403
+42 error forbidden cannot modify pre-existing version: 1.0.0
+42 error old={"name":"increment-file","version":"1.0.0","description":"Increment the base filename","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Darek Rossman","email":"spellingbees@gmail.com"},"license":"ISC","_id":"increment-file@1.0.0","_shasum":"a64b597eb8c52dffa092d80a10da41daf3a7eea0","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"drossman","email":"spellingbees@gmail.com"},"maintainers":[{"name":"drossman","email":"spellingbees@gmail.com"}],"dist":{"shasum":"a64b597eb8c52dffa092d80a10da41daf3a7eea0","tarball":"http://registry.npmjs.org/increment-file/-/increment-file-1.0.0.tgz"}}
+42 error new={"name":"increment-file","version":"1.0.0","description":"Increment the base filename","main":"index.js","repository":{"type":"git","url":"https://github.com/subpopular/increment-file"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"author":{"name":"Darek Rossman","email":"spellingbees@gmail.com"},"license":"ISC","gitHead":"7c20e456c201f2df6d70e27a2882d8c1d84a5f6e","bugs":{"url":"https://github.com/subpopular/increment-file/issues"},"readme":"ERROR: No README data found!","homepage":"https://github.com/subpopular/increment-file","_id":"increment-file@1.0.0","_shasum":"0967d154f3ae1d2d5eae3acbd808bf72020b1d63","_from":".","_npmVersion":"2.5.1","_nodeVersion":"0.12.0","_npmUser":{"name":"drossman","email":"spellingbees@gmail.com"},"maintainers":[{"name":"drossman","email":"spellingbees@gmail.com"}],"dist":{"shasum":"0967d154f3ae1d2d5eae3acbd808bf72020b1d63","tarball":"http://registry.npmjs.org/increment-file/-/increment-file-1.0.0.tgz"}}: increment-file
+43 error If you need help, you may report this error at:
+43 error     <http://github.com/npm/npm/issues>
+44 verbose exit [ 1, true ]
