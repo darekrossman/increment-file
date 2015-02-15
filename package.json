@@ -1,15 +1,16 @@
 {
   "name": "increment-file",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Increment the base filename",
   "main": "index.js",
   "repository": {
-    "type":"git",
-    "url":"https://github.com/subpopular/increment-file"
+    "type": "git",
+    "url": "https://github.com/subpopular/increment-file"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Darek Rossman <spellingbees@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }

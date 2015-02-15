@@ -1,4 +1,4 @@
-var require path = require('path');
+var path = require('path');
 
 /**
  * Takes a file path as a string and returns 
